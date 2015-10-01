@@ -1,0 +1,141 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.header{
+	padding: 4px 0;
+	background-color: #F5F7F9;
+}
+
+.header #dt{
+	height: 30px;
+	width: 30px;
+}
+
+.slogan p{
+display: inline-block;
+margin-left: 350px;
+}
+
+#hl{
+	margin-left: 50px;
+}
+
+/* MENU */
+.menu{
+	background-color: #F5F7F9;
+	height: 40px;
+	width: 984px;
+	margin-left: 150px;
+}
+
+.menu #item{
+	display: inline-block;
+	margin-left: 20px;
+	position: relative;
+	left: -15px;
+	padding: 10px 5px;
+	text-decoration: none;
+	color: #000;
+}
+
+.menu #item:hover{
+	background-color: #D5E4F1;
+}
+
+
+.supporting .col-md-3{
+	background-color: #D5E4F1;
+	text-align: center;
+	padding: 50px;
+	margin-left: -30px;
+}
+
+/* Slider*/
+#slider {
+    width: 984px;
+    height: 400px;
+    overflow: hidden;
+    margin-left: 150px;
+}
+
+#slider .slides {
+    display: block;
+    width: 6000px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+#slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 984px;
+    height: 400px;
+}
+
+/* helper css, since we don't have images */
+.slide1 {background: url('banner.jpg') no-repeat center center;}
+.slide2 {background: url('banner1.jpg') no-repeat center center;}
+.slide3 {background: url('banner2.jpg') no-repeat center center;}
+
+/* Product */
+
+.product #image{
+	height: 200px;
+	width: 200px;
+	border:1px solid afaaaa;
+}
+
+.product #image:hover{
+	border:1px solid red;
+}
+
+.product h1{
+	border-bottom: 1px solid black;
+	text-transform: capitalize;
+	font-size: 25px;
+	font-family: 'Open-Sans', sans-serif;
+	width: 1080px;
+	margin-left: 110px;
+	margin-bottom: 20px;
+}
+
+/*footer*/
+.footer{
+	background-color: #E8E8E8;
+	border-top: 0.75px solid black;
+	height: 200px;
+	font-family: 'Open-Sans', sans-serif;
+	text-transform: uppercase;
+}
+
+.footer h2{
+	position: relative;
+	top:180px;
+	font-size: 15px;
+}
+
+.footer p{
+	position: relative;
+	top: 150px;
+	font-size: 15px;
+	right: -1050px;
+}
